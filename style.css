@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: coral;
+}
+
+.error{
+    color: red;
+}
+
+#success{
+    color: green;
+}
+
+#overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+form{
+    width: 30%;
+    background-color: white;
+    margin: 10vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+}
+
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea:focus{
+    border-bottom: 2px solid rgb(238, 59, 89);
+}
+input:focus{
+    border-bottom: 2px solid rgb(238, 59, 89);
+}
+.sm{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+}
+

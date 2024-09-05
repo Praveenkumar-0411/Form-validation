@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay">
+        <form onsubmit="validateForm(); event.preventDefault();">
+        <h1>Contact Us</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error"></small><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" patten=/\S+@\S+\.\S+/; placeholder="Your Email">
+        <small class="error"></small><br>
+
+        <label for="contact">Contact:</label>
+        <input type="number" id="contact" placeholder="Your Contact Number">
+        <small class="error"></small><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder=" Your Message"></textarea>
+        <small class="error"></small><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"  placeholder=" Enter Your Password">
+        <small class="error"></small><br><br><br>
+
+        <div>
+            <input type="submit" value="send massage" class="sm">
+        </div><br>
+        <p id="success"></p>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
